@@ -1,0 +1,29 @@
+#chdir /var/log/gcs
+#chdir gcs/trunk/src/code
+#screen -t Asterisk 3
+#screen -t Coding 0
+#screen -t Docs 5
+#screen -t Exten 4
+#screen -t Log 1
+#screen -t MySQL 2
+source /etc/screenrc
+altscreen on
+attrcolor b ".I"
+autodetach on
+caption always "%{Yk} %H %0c:%s %{k}|%{G} %l %{k}|%{W} %-w%{+u}%n %t%{-u}%+w"
+defbce "on"
+defflow off
+defscrollback 10000
+defutf8 on
+escape ^]]
+#hardstatus string "[screen %n%?: %t%?] %h"
+hardstatus alwayslastline "%{= kR} %-Lw%{= Kk} %n%f %t %{-}%+Lw %=%{= dd}"
+hardstatus off
+multiuser on
+setenv DISPLAY ':0'
+setenv LANG 'C'             
+shell -$SHELL
+startup_message off
+vbell off
+vbell on
+

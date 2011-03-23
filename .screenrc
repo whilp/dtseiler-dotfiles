@@ -24,6 +24,5 @@ setenv DISPLAY ':0'
 setenv LANG 'C'             
 shell -$SHELL
 startup_message off
-vbell off
 vbell on
 
